@@ -4,8 +4,8 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 import sys
-from .TwitchFarmer import stop
-from .TwitchFarmer import watch_twitch
+from TwitchFarmer import stop
+from TwitchFarmer import watch_twitch
 
 
 class Window(QWidget):
