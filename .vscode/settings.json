@@ -1,4 +1,4 @@
 {
     "python.linting.enabled": false,
-    "python.defaultInterpreterPath": "/home/adi/pyvenv/proj_twitch/bin/python"
+    "python.defaultInterpreterPath": "/home/adi/pyvenv/proj_twitch/bin/python",
 }

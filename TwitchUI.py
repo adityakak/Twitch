@@ -4,7 +4,8 @@ from PyQt5.QtWidgets import *
 from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 import sys
-import Twitch_Farmer
+from .TwitchFarmer import stop
+from .TwitchFarmer import watch_twitch
 
 
 class Window(QWidget):
@@ -22,7 +23,7 @@ class Window(QWidget):
             save_profile_button.setDisabled(False)
 
             stop_button.setDisabled(True)
-            Twitch_Farmer.stop()
+            stop()
 
         def start_watching():
             print("Started Watching")
@@ -39,7 +40,7 @@ class Window(QWidget):
             username = username_box.text().strip()
             password = password_box.text().strip()
             if username != "" and password != "":
-                Twitch_Farmer.watch_twitch([os.name, app.primaryScreen().size(), niceness_levels.currentText(), username, password])
+                watch_twitch([os.name, app.primaryScreen().size(), niceness_levels.currentText(), username, password])
 
         def close_program():
             print("Closing")
